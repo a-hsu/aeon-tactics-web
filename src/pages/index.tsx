@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
+
 import { Community, Footer, Hero, Navbar, PlayNow, Team } from "./components";
-import TestComponent from "./components/TestComponent";
 
 export default function Home() {
 	return (
