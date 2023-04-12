@@ -6,19 +6,27 @@
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+  line-height: 1.5;
+}
+
+div {
+  display: block;
 }
 
 body {
+  position: static;
   margin: 0;
   padding: 0;
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  width: 100%;
+  overflow-x: hidden;
+  font-size: 1em;
+  font-family: 'Mark Pro',
+    Arial,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
