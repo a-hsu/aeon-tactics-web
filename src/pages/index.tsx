@@ -1,7 +1,13 @@
 import Head from "next/head";
 import Image from "next/image";
+import Community from "./components/Community";
+import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import PlayNow from "./components/PlayNow";
+import Team from "./components/Team";
 
-import { Community, Footer, Hero, Navbar, PlayNow, Team } from "./components";
+// import { Community, Footer, Hero, Navbar, PlayNow, Team } from "./components";
 
 export default function Home() {
 	return (
