@@ -3,35 +3,38 @@ import { AiOutlineGithub, AiOutlineLogin, AiOutlineMenu } from "react-icons/ai";
 
 const Navbar = () => {
 	return (
-		<nav className=" overflow-hidden flex fixed w-screen bg-mirage-950 justify-around h-20 z-50">
+		<header className=" overflow-hidden flex fixed w-screen bg-mirage-950 justify-around h-20 z-50">
 			{/* Logo */}
 			<div className="flex ml-4" id="logo">
 				<Link href="/">
-					{/* <button className="cursor-pointer"> */}
-					{/* <img
+					{/* <button className="cursor-pointer">
+					<img
 						src="/assets/AeonTacticsLogo.png"
 						alt=""
 						className="w-auto h-auto xs:w-14 xs:h-14 "
-					/> */}
-					{/* </button> */}
+					/>
+					</button> */}
 				</Link>
 				<div className="p-0 m-1 items-center flex">
-					<h1 className="p-0 m-0 font-bold text-white text-center text-2xl">
+					<Link
+						href="/"
+						className="p-0 m-0 font-bold text-white text-center text-2xl"
+					>
 						AEON TACTICS
-					</h1>
+					</Link>
 				</div>
 			</div>
 
-			{/* Links */}
-			<div className="flex">
+			{/* NavLinks */}
+			<nav className="flex">
 				<ul className="hidden lg:flex items-center m-0 p-0 font-bold">
-					{["PLAY NOW", "NEWS", "COMMUNITY", "ABOUT"].map(item => {
+					{["PLAY", "NEWS", "COMMUNITY", "ABOUT"].map(item => {
 						return (
 							<li
 								key={`navlink-${item}`}
 								className=" hover:bg-slate-600 hover:ease-in px-2 rounded-md transition duration-15 text-white"
 							>
-								<Link href="/">
+								<Link href={`/${item.toLowerCase()}`}>
 									<p>{item}</p>
 								</Link>
 							</li>
@@ -60,8 +63,8 @@ const Navbar = () => {
 				>
 					<AiOutlineMenu size={28} color="white" className="" />
 				</button>
-			</div>
-		</nav>
+			</nav>
+		</header>
 	);
 };
 export default Navbar;

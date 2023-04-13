@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { CgArrowLongDownR } from "react-icons/cg";
 import { FaArrowCircleDown, FaArrowCircleRight } from "react-icons/fa";
-import HeroImage from "../../../public/assets/HeroImage.png";
+import HeroImage from "../../public/assets/HeroImage.png";
 const Hero = () => {
 	return (
 		<>
@@ -15,12 +15,12 @@ const Hero = () => {
 						src={HeroImage}
 						alt="hero"
 						placeholder="blur"
-						className="object-cover bg-no-repeat bg-cover top-0 left-0 opacity-40 h-screen w-screen lg:min-h-[800px]"
+						className="object-cover bg-no-repeat bg-cover top-0 left-0 opacity-40 h-screen w-screen lg:min-h-[800px] -scale-x-100"
 					/>
 				</div>
 
 				{/* Hero Content */}
-				<div className="flex flex-col lg:w-[450px] h-[450px] items-center content-center absolute mt-32 lg:ml-32 lg:mt-48">
+				<div className="flex flex-col lg:w-[450px] h-[450px] items-center content-center absolute mt-48 lg:ml-32 lg:mt-48">
 					{/* Inner Content */}
 					{/* Logo */}
 					<img src="assets/AeonTacticsLogo.png" alt="" className="w-52 h-52" />
@@ -32,11 +32,16 @@ const Hero = () => {
 						<h1 className=" text-slate-100 font-extrabold text-5xl">Tactics</h1>
 					</div>
 					{/* Subtext */}
-					<p className="text-neutral-200 text-lg text-center m-4 px-8">
-						Join the battle and lead your team to victory! Unleash your
-						strategic prowess and dominate the battlefield!
-					</p>
-
+					<div className="flex flex-col items-center mt-6 mx-6">
+						<h2 className=" text-slate-100 font-extrabold text-3xl text-center">
+							Coming Soon - Developed by AeTa Studios
+						</h2>
+						<p className="text-neutral-200 text-lg text-center my-4 px-1">
+							Aeon Tactics is an online multiplayer deck building autobattler
+							set in a fantastical new world. Build your deck, strategize your
+							next move, and claim victory!
+						</p>
+					</div>
 					{/* Learn More Button */}
 					<button className=" w-72 h-24 justify-around rounded-2xl  flex items-center bg-gradient-to-r shadow-lg to-burnt-orange-600 from-mirage-200 transition duration-300 hover:ease-in hover:to-burnt-orange-500 hover:from-mirage-100">
 						<div className="relative">
