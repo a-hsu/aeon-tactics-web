@@ -30,6 +30,19 @@ module.exports = {
 				// "hero-image": "url('assets/HeroImage.png')",
 			},
 			colors: {
+				scooter: {
+					50: "#eefcfd",
+					100: "#d3f4fa",
+					200: "#ace8f5",
+					300: "#73d7ed",
+					400: "#2db9dc",
+					500: "#179ec3",
+					600: "#167ea4",
+					700: "#196785",
+					800: "#1d556d",
+					900: "#1c475d",
+					950: "#0d2e3f",
+				},
 				mirage: {
 					50: "#f4f6fb",
 					100: "#e8ebf6",
