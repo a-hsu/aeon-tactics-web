@@ -28,7 +28,7 @@ const Navbar = () => {
 			{/* NavLinks */}
 			<nav className="flex">
 				<ul className="hidden lg:flex items-center m-0 p-0 font-bold">
-					{["PLAY", "NEWS", "COMMUNITY", "ABOUT"].map(item => {
+					{["GAME", "NEWS", "COMMUNITY", "ABOUT"].map(item => {
 						return (
 							<li
 								key={`navlink-${item}`}

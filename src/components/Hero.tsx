@@ -6,7 +6,7 @@ const Hero = () => {
 	return (
 		<>
 			<section
-				className="flex flex-col w-screen relative lg:min-h-[800px] mx-auto"
+				className="flex flex-col w-screen relative lg:min-h-[800px] bg-mirage-950 mx-auto"
 				id="hero"
 			>
 				{/* Hero Image */}
@@ -15,7 +15,7 @@ const Hero = () => {
 						src={HeroImage}
 						alt="hero"
 						placeholder="blur"
-						className="object-cover bg-no-repeat bg-cover top-0 left-0 opacity-40 h-screen w-screen lg:min-h-[800px] -scale-x-100"
+						className="object-cover bg-no-repeat bg-cover top-0 left-0  opacity-40 h-screen w-screen lg:min-h-[800px] -scale-x-100"
 					/>
 				</div>
 
@@ -23,7 +23,11 @@ const Hero = () => {
 				<div className="flex flex-col lg:w-[450px] h-[450px] items-center content-center absolute mt-32  lg:ml-32 mx-auto">
 					{/* Inner Content */}
 					{/* Logo */}
-					<img src="assets/AeonTacticsLogo.png" alt="" className="w-52 h-52 mx-auto" />
+					<img
+						src="assets/AeonTacticsLogo.png"
+						alt=""
+						className="w-52 h-52 mx-auto"
+					/>
 					{/* Title */}
 					<div className="flex flex-row mx-auto">
 						<h1 className=" text-burnt-orange-200 px-2 font-extrabold text-5xl ">

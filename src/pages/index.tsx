@@ -24,14 +24,14 @@ export default function Home() {
 				<link rel="icon" href="/assets/AeonTacticsLogo.png" />
 			</Head>
 			<Navbar />
-			<main className="content flex flex-col bg-mirage-950">
+			<main className="content flex flex-col bg-scooter-300">
 				<Hero />
-				<News />
 				<PlayNow />
+				<News />
 				<Community />
 				<Team />
-				<Footer />
 			</main>
+			<Footer />
 		</>
 	);
 }
