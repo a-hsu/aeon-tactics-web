@@ -10,6 +10,7 @@ const News = () => {
 			>
 				{/* <BasicDivider /> */}
 				{/* Content */}
+				{/* The goal here is to be able to programmatically make this list adjust based on the top 3 most recent articles */}
 				<div className="flex flex-col mt-40 mx-24">
 					{/* Grid */}
 					<div className="grid grid-cols-3 grid-rows-2 gap-4">
