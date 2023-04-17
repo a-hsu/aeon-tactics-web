@@ -10,12 +10,13 @@ const Hero = () => {
 				id="hero"
 			>
 				{/* Hero Image */}
-				<div className="block newHeroBackground">
+				<div className="block newHeroBackground image-wrapper">
 					<Image
 						src={HeroImage}
 						alt="hero"
 						placeholder="blur"
 						className="object-cover bg-no-repeat bg-cover top-0 left-0  opacity-40 h-screen w-screen lg:min-h-[800px] -scale-x-100"
+						draggable="false"
 					/>
 				</div>
 
