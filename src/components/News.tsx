@@ -1,3 +1,4 @@
+import Link from "next/link";
 import BasicDivider from "./Dividers/BasicDivider";
 
 const News = () => {
@@ -16,9 +17,12 @@ const News = () => {
 							return (
 								<div
 									key={`${e}`}
-									className="border-2 border-solid border-black h-64"
+									className="border-2 border-solid border-black h-52 m-0 p-0 flex flex-row"
 								>
-									{e}
+									<div className="m-0 p-0 h-full w-2/5 border-red-400 border-2 border-solid">
+										<img src="" alt="" />
+									</div>
+									<div className="m-0 p-0 h-full w-3/5 border-blue-400 border-2 border-solid"></div>
 								</div>
 							);
 						})}
@@ -26,7 +30,7 @@ const News = () => {
 				</div>
 				<div className="flex items-center my-12 p-2 justify-center">
 					<button className="mx-auto">
-						<p className="text-center tracking-tighter underline-offset-4 underline hover:text-burnt-orange-500 transition duration-150">SEE MORE</p>
+						<Link href="/news" className="text-center tracking-tighter underline-offset-4 underline hover:text-burnt-orange-500 transition duration-150">VIEW ALL</Link>
 					</button>
 				</div>
 			</section>
