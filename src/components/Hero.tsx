@@ -27,7 +27,7 @@ const Hero = () => {
 					<img
 						src="assets/AeonTacticsLogo.png"
 						alt=""
-						className="w-52 h-52 mx-auto"
+						className="w-40 h-42 mb-8 mx-auto"
 					/>
 					{/* Title */}
 					<div className="flex flex-row mx-auto">
