@@ -23,7 +23,7 @@ const Footer = () => {
 							</div>
 							{/* Links */}
 							<nav className="flex">
-								<ul className="flex items-center m-0 p-0 font-bold">
+								<ul className="flex items-center m-0 p-0 font-bold flex-wrap">
 									{["GAME", "PLAY", "DATABASE", "AEONS", "SOLARA", "ABOUT"].map(
 										item => {
 											return (
