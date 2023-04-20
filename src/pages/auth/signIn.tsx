@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import FormInput from "../../components/Input/FormInput";
+import { FormInputDto } from "../../libs/Dto/authDto";
 import AuthLayout from "./AuthLayout";
-import { FormInputDto } from "./Dto/authDto";
 
 const serverUrl = process.env.SERVER_URL || "";
 const signIn = () => {

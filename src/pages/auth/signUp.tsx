@@ -4,8 +4,8 @@ import {
 } from "@/components/Buttons/FormSubmitButton";
 import FormInput from "@/components/Input/FormInput";
 import { useState } from "react";
+import { FormInputDto } from "../../libs/Dto/authDto";
 import AuthLayout from "./AuthLayout";
-import { FormInputDto } from "./Dto/authDto";
 const signUp = () => {
 	const [username, setUsername] = useState("");
 	const [password, setPassword] = useState("");

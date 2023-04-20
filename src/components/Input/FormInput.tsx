@@ -1,4 +1,4 @@
-import { FormInputDto } from "../../pages/auth/Dto/authDto";
+import { FormInputDto } from "../../libs/Dto/authDto";
 
 const FormInput = (formData: FormInputDto) => {
 	// const FormInput = ({
