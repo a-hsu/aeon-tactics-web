@@ -1,5 +1,5 @@
 import Link from "next/link";
-import BasicDivider from "./Dividers/BasicDivider";
+
 
 const News = () => {
 	const newsArticles = [

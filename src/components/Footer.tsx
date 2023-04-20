@@ -24,20 +24,18 @@ const Footer = () => {
 							{/* Links */}
 							<nav className="flex justify-center my-2">
 								<ul className="flex items-center m-0 p-0 font-bold flex-wrap">
-									{["GAME", "PLAY", "DATABASE", "AEONS", "SOLARA", "ABOUT"].map(
-										item => {
-											return (
-												<li
-													key={`navlink-${item}`}
-													className=" hover:bg-slate-600 hover:ease-in px-4 rounded-md transition duration-15 text-white"
-												>
-													<Link href={`/${item.toLowerCase()}`}>
-														<p>{item}</p>
-													</Link>
-												</li>
-											);
-										}
-									)}
+									{["NEWS", "COMMUNITY"].map(item => {
+										return (
+											<li
+												key={`navlink-${item}`}
+												className=" hover:bg-slate-600 hover:ease-in px-4 rounded-md transition duration-15 text-white"
+											>
+												<Link href={`/${item.toLowerCase()}`}>
+													<p>{item}</p>
+												</Link>
+											</li>
+										);
+									})}
 								</ul>
 							</nav>
 						</div>
