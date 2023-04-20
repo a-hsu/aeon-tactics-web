@@ -5,15 +5,15 @@ import Logo from "../../public/assets/AeonTacticsLogo.png";
 const Footer = () => {
 	return (
 		<>
-			<footer className="block m-0 p-0 min-h-[510px] bg-mirage-950 w-screen text-gray-500">
+			<footer className="block m-0 p-0 min-h-[310px] bg-mirage-950 w-screen h-full text-gray-500">
 				{/* Content */}
 				<div className="pt-[60px] px-[20px] pb-[40px] text-center ">
 					<div className="mx-auto w-full max-w-screen-[1440px]">
 						{/* Links */}
 						<div className="flex flex-col">
 							{/* Logo */}
-							<div>
-								<Link href="#">
+							<div className="logo mb-4">
+								<Link href="#home" scroll={false}>
 									<Image
 										src={Logo}
 										alt=""
@@ -22,7 +22,7 @@ const Footer = () => {
 								</Link>
 							</div>
 							{/* Links */}
-							<nav className="flex">
+							<nav className="flex justify-center my-2">
 								<ul className="flex items-center m-0 p-0 font-bold flex-wrap">
 									{["GAME", "PLAY", "DATABASE", "AEONS", "SOLARA", "ABOUT"].map(
 										item => {
@@ -58,7 +58,8 @@ const Footer = () => {
 						{/* TOP THE TOP */}
 						<div>
 							<Link
-								href="#"
+								href="#home"
+								scroll={false}
 								className="text-sm text-center flex flex-row items-center justify-evenly mx-auto w-36 tracking-tighter"
 							>
 								<p>TO THE SURFACE</p>

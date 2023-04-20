@@ -2,6 +2,7 @@ import Image from "next/image";
 import { CgArrowLongDownR } from "react-icons/cg";
 import { FaArrowCircleDown, FaArrowCircleRight } from "react-icons/fa";
 import HeroImage from "../../public/assets/HeroImage.png";
+import Link from "next/link";
 const Hero = () => {
 	return (
 		<>
@@ -48,7 +49,7 @@ const Hero = () => {
 						</p>
 					</div>
 					{/* Learn More Button */}
-					<button className=" w-72 h-24 justify-around rounded-2xl  flex items-center bg-gradient-to-r shadow-lg to-burnt-orange-600 from-mirage-200 transition duration-300 hover:ease-in hover:to-burnt-orange-500 hover:from-mirage-100">
+					<Link href="#playnow" className=" w-72 h-24 justify-around rounded-2xl  flex items-center bg-gradient-to-r shadow-lg to-burnt-orange-600 from-mirage-200 transition duration-[50] hover:ease-in hover:to-burnt-orange-500 hover:from-mirage-100 hover:scale-95" scroll={false}>
 						<div className="relative">
 							<FaArrowCircleRight
 								size={42}
@@ -58,9 +59,9 @@ const Hero = () => {
 						<p className="m-2 font-bold text-3xl tracking-wider p-2">
 							Learn More
 						</p>
-					</button>
+					</Link>
 				</div>
-				{/* <FaArrowCircleDown className="mx-auto motion-safe:animate-bounce" color="white" size={42} /> */}
+
 			</section>
 		</>
 	);
