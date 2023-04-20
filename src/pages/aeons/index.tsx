@@ -14,15 +14,15 @@ const Aeons = ({ data }:any) => {
   );
 }
 
-export const getStaticProps:GetStaticProps = async (ctx) => {
-  // Get Aeon List
-  const res = await fetch(serverUrl + ``)
-  const data = await res.json();
-  return {
-    props:{
-      data: { data }
-    }
-  }
-}
+// export const getStaticProps:GetStaticProps = async (ctx) => {
+//   // Get Aeon List
+//   const res = await fetch(serverUrl + ``)
+//   const data = await res.json();
+//   return {
+//     props:{
+//       data: { data }
+//     }
+//   }
+// }
 
 export default Aeons;
